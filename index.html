@@ -310,7 +310,28 @@
 
         <!-- form window -->
         <form action="#" class="form-window">
-            <input type="text">
+            <label class="form-label" for="">
+                Ім'я
+                <input class="form-field" type="text" autofocus>
+            </label>
+            <label class="form-label" for="">
+                Телефон
+                <input class="form-field" type="tel" name="" id="">
+            </label>
+            <label class="form-label" for="">
+                Пошта
+                <input class="form-field" type="email" name="" id="">
+            </label>
+            <label class="form-label" for="">
+                Коментар
+                <textarea class="form-textarea" name="" id="" cols="30" rows="10" placeholder="Введіть текст"></textarea>
+            </label>
+            <div class="form-checkbox">
+                <input type="checkbox" name="checkbox" id="">
+                <label for="checkbox" class="form-label-checkbox">Погоджуюся з розсилкою та приймаю Умови договору</label>
+            </div>            
+                         
+            <button class="btn-submit" type="submit">Відправити</button>
         </form>
 
         <!-- pop-up window -->
