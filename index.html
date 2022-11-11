@@ -306,37 +306,43 @@
             </ul>
             </div>
         </div>
-        </footer>
-
-        <!-- form window -->
-        <form action="#" class="form-window">
-            <label class="form-label" for="">
-                Ім'я
-                <input class="form-field" type="text" autofocus>
-            </label>
-            <label class="form-label" for="">
-                Телефон
-                <input class="form-field" type="tel" name="" id="">
-            </label>
-            <label class="form-label" for="">
-                Пошта
-                <input class="form-field" type="email" name="" id="">
-            </label>
-            <label class="form-label" for="">
-                Коментар
-                <textarea class="form-textarea" name="" id="" cols="30" rows="10" placeholder="Введіть текст"></textarea>
-            </label>
-            <div class="form-checkbox">
-                <input type="checkbox" name="checkbox" id="">
-                <label for="checkbox" class="form-label-checkbox">Погоджуюся з розсилкою та приймаю Умови договору</label>
-            </div>            
-                         
-            <button class="btn-submit" type="submit">Відправити</button>
-        </form>
+        </footer>        
 
         <!-- pop-up window -->
         <div class="backdrop is-hidden" data-modal>
             <div class="modal">
+                <!-- form -->
+                <form action="#" class="form-window">
+                    <label for="">
+                        <h3 class="form-header">Залиште свої дані, ми вам передзвонимо</h3>
+                    </label>
+                    
+                    <label class="form-label" for="">
+                        Ім'я
+                        <input class="form-field" type="text" autofocus>
+                    </label>
+                    <label class="form-label" for="">
+                        Телефон
+                        <input class="form-field" type="tel" name="" id="">
+                    </label>
+                    <label class="form-label" for="">
+                        Пошта
+                        <input class="form-field" type="email" name="" id="">
+                    </label>
+                    <label class="form-label" for="">
+                        Коментар
+                        <div class="form-textarea-div">
+                            <textarea class="form-textarea" name="" id="" cols="30" rows="10" placeholder="Введіть текст"></textarea>
+                        </div>
+                        
+                    </label>
+                    <div class="form-checkbox">
+                        <input type="checkbox" name="checkbox" id="">
+                        <label for="checkbox" class="form-label-checkbox">Погоджуюся з розсилкою та приймаю <a href="#" class="form-checkbox-link">Умови договору</a></label>
+                    </div>            
+                         
+                    <button class="btn-submit" type="submit">Відправити</button>
+                </form>
                 <button type="button" class="btn-close" data-modal-close>
                     <svg class="icon-cross" width="30" height="30"><use xlink:href="./img/icons.svg#icon-close-black"></use></svg>
                 </button>                
