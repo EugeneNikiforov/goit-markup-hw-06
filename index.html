@@ -313,37 +313,43 @@
             <div class="modal">
                 <!-- form -->
                 <form action="#" class="form-window">
-                    <label for="">
                         <h3 class="form-header">Залиште свої дані, ми вам передзвонимо</h3>
-                    </label>
-                    
-                    <label class="form-label" for="">
+                    <label class="form-label" for="name-form">
                         Ім'я
-                        <input class="form-field" type="text" autofocus>
-                        <!-- <svg class="icon icon-person-black" width="18" height="18"><use xlink:href="./img/icons.svg#icon-person-black"></use></svg> -->
+                        <input class="form-field" type="text" name="name-form" autofocus>
+                        <svg class="form-icon" width="18" height="18">
+                            <use xlink:href="./img/icons.svg#icon-person-black"></use>
+                        </svg>
                     </label>
-                    <label class="form-label" for="">
+                    <label class="form-label" for="tel-form">
                         Телефон
-                        <input class="form-field" type="tel" name="" id="">
-                        <!-- <svg class="icon icon-phone-black" width="18" height="18"><use xlink:href="./img/icons.svg#icon-phone-black"></use></svg> -->
+                        <input class="form-field" type="tel" name="tel-form">
+                        <svg class="form-icon" width="18" height="18">
+                            <use xlink:href="./img/icons.svg#icon-phone-black"></use>
+                        </svg>
                     </label>
-                    <label class="form-label" for="">
+                    <label class="form-label" for="email-form">
                         Пошта
-                        <input class="form-field" type="email" name="" id="">
-                        <!-- <svg class="icon icon-email-black" width="18" height="18"><use xlink:href="./img/icons.svg#icon-email-black"></use></svg> -->
+                        <input class="form-field" type="email" name="email-form">
+                        <svg class="form-icon" width="18" height="18">
+                            <use xlink:href="./img/icons.svg#icon-email-black"></use>
+                        </svg>
                     </label>
-                    <label class="form-label" for="">
+                    <label class="form-label" for="textarea">
                         Коментар
-                        <div class="form-textarea-div">
-                            <textarea class="form-textarea" name="" id="" placeholder="Введіть текст"></textarea>
-                        </div>
-                        
+                        <!-- <div class="form-textarea-div"> -->
+                            <textarea class="form-textarea" name="textarea" placeholder="Введіть текст"></textarea>
+                        <!-- </div> -->
                     </label>
-                    <div class="form-checkbox">
-                        <input class="checkbox-hidden" type="checkbox" name="checkbox" id="">
-                        <label for="checkbox" class="form-label-checkbox">Погоджуюся з розсилкою та приймаю <a href="#" class="form-checkbox-link">Умови договору</a></label>
-                    </div>            
-                         
+                    <div class="form-checked">
+                        <input class="checkbox-hidden" type="checkbox" name="form-checkbox" id="form-checkbox">
+                        <label for="form-checkbox" class="form-label-checkbox">Погоджуюся з розсилкою та приймаю <a href="#" class="form-checkbox-link" target="_blank" rel="noopener noreferrer">Умови договору</a></label>
+                    </div>
+                    <!-- <div class="form-checked">
+                        <label for="form-checkbox">Погоджуюся з розсилкою та приймаю</label>
+                        <a href="#" target="_blank" rel="noopener noreferrer">Умови договору</a>
+                        <input type="checkbox" name="form-checkbox" id="form-checkbox">
+                    </div> -->
                     <button class="btn-submit" type="submit">Відправити</button>
                 </form>
                 <button type="button" class="btn-close" data-modal-close>
