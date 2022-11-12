@@ -555,9 +555,21 @@ input {
     height: 24px;
     margin-bottom: 30px;
 }
-.form-checkbox input {
+/* .form-checkbox input {
     width: 16px;
     height: 15px;
+} */
+.checkbox-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
 .form-label-checkbox {
     font-size: 14px;
@@ -586,6 +598,7 @@ input {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     padding: 10px 52px;
+    transition: background-color var(--time) var(--time-effect);
 }
 
 /* pop-up window */
@@ -628,11 +641,15 @@ input {
     background-color: transparent;
     cursor: pointer;
     padding: 0;
+    fill: var(--black-color);
+    transition: fill var(--time) var(--time-effect);
+}
+.btn-close:hover, .btn-close:focus {
+    fill: var(--selection-color);
 }
 .icon-cross {
     width: 18px;
-    height: 18px;
-    fill: var(--black-color);
+    height: 18px;    
 }
 
 /* portfolio */
