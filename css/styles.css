@@ -529,6 +529,9 @@ input {
 .form-field-subscribe::placeholder {
     color: rgba(255, 255, 255, 0.6);
 }
+#subscribe-form {
+    color: var(--light-gray);
+}
 .btn-subscribe-submit {
     display: flex;
     justify-content: center;
