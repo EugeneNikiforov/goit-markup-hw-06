@@ -492,13 +492,20 @@ input {
     flex-wrap: wrap;
     width: 570px;
     height: 86px;
+    margin-left: 23px;
+}
+.subscribe-studio {
     padding-top: 72px;
     padding-bottom: 94px;
-    margin-left: 23px;
+}
+.subscribe-portfolio {
+    padding-top: 83px;
+    padding-bottom: 83px;
 }
 .form-subscribe {
     display: flex;
     justify-content: flex-start;
+    flex-wrap: nowrap;
     align-items: center;
     gap: 12px;
 }
