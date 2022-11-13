@@ -8,7 +8,8 @@
     --light-blue: #2196F3;
     --light-blue-bord: rgba(33, 150, 243, 1);
     --light-blue-select: #188CE8;
-    --light-gray: #757575;   
+    --light-gray: #757575;
+    --light-gray-bord: rgba(255, 255, 255, 0.3);   
     --selection-color: #2196F3;
     --white-color: #FFF;
     --white-bord: #ECECEC;
@@ -485,6 +486,62 @@ input {
     fill: var(--icon-white);
     background-color: var(--selection-color);
 }
+/* subscribe form */
+.footer-subscribe {
+    display: flex;
+    flex-wrap: wrap;
+    width: 570px;
+    height: 86px;
+    padding-top: 72px;
+    padding-bottom: 94px;
+    margin-left: 23px;
+}
+.form-subscribe {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 12px;
+}
+.form-label-subscribe {
+    display: flex;
+    font-size: 16px;
+    line-height: 1.25;
+    align-items: center;
+    letter-spacing: 0.03em;
+}
+.form-field-subscribe {
+    width: 358px;
+    height: 50px;
+    border: 1px solid var(--light-gray-bord);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background-color: var(--bgnd-gray);
+    padding: 15px 16px;
+    resize: none;
+}
+.form-field-subscribe::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}
+.btn-subscribe-submit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    gap: 10px;
+    width: 200px;
+    height: 50px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.875;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: var(--white-color);
+    fill: var(--white-color);
+    background-color: var(--light-blue);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: none;
+}
 
 /* form */
 .form-window {
@@ -581,6 +638,9 @@ input {
     position: relative;
 }
 .form-checked label::before {
+    position: absolute;
+    top: 5px;
+    left: 2px;
     display: inline-block;
     content: "";
     width: 16px;
@@ -610,9 +670,11 @@ input {
     overflow: hidden;
 }
 .form-label-checkbox {
+    display: inline-block;
     font-size: 14px;
     line-height: 1.7143;
     letter-spacing: 0.03em;
+    padding-left: 25px;
 }
 .form-checkbox-link {
     color: var(--light-blue);
@@ -636,6 +698,7 @@ input {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     padding: 10px 52px;
+    border: none;
     transition: background-color var(--time) var(--time-effect), color var(--time) var(--time-effect);
 }
 .btn-submit:hover, .btn-submit:focus {
